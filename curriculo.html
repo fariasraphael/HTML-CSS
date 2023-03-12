@@ -10,23 +10,36 @@
     <title>Curriculo</title>
 </head>
 <style>
-    *{
+    * {
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }
+
+    a{
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .fs-6 {
+        font-size: calc(0.7rem + 0.5vw) !important;
+    }
+
     h2,
     .h2 {
         font-size: calc(1.325rem + 0.7vw);
     }
-    [name="social-media"]:first-child{
+
+    [name="first-social-media"] {
         border-radius: 20px 20px 0 0;
     }
+
     @media (max-width: 768px) {
-        [name="social-media"]:first-child{
-        border-radius: 20px 0 0 20px;
-    }
-    [name="social-media"]:last-child{
-        border-radius: 0 20px 20px 0;
-    }
+        [name="first-social-media"] {
+            border-radius: 20px 0 0 20px;
+        }
+
+        [name="last-social-media"]:last-child {
+            border-radius: 0 20px 20px 0;
+        }
     }
 </style>
 
@@ -34,36 +47,51 @@
     <header class="container-fluid">
 
         <div class="row">
-            <div class="col-3 col-md-3" 
-            style="padding-right: 0px;">
+            <div class="col-3 col-md-3" style="padding-right: 0px;">
                 <img src="https://thumbs2.imgbox.com/4d/55/NPifye9G_t.jpg"
                     class="img-fluid w-75 z-1 float-end  rounded-circle border border-5 border-info z-1" alt="foto"
                     style="min-width: 85px;">
-                    <div class="py-4 bg-info border-bottom rounded-end-5" style="margin-top: -25px; margin-left: -15px;"></div>
+                <div class="py-4 bg-info border-bottom rounded-end-5" style="margin-top: -25px; margin-left: -15px;">
+                </div>
             </div>
-            <div class="col-9 col-md-5 d-flex  ">
+            <div class="col-9 col-md-7 d-flex  ">
                 <div class="row ">
                     <div class="col-12">
                         <h2>Raphael da Silva Farias</h2>
                         <h5>Quality Assurance Tester</h5>
                     </div>
-                    <div class="row align-self-end row-cols-auto p-0 m-0">
-                        <div class="ratio-1x1 col-1 col-md-1 text-center bg-info rounded-circle p-1">☎</div>
-                        <div class="col-11 col-md-5 text-truncate ">(21) 996-965-765</div>
-                        <div class="ratio-1x1 col-1 col-md-1 text-center bg-info rounded-circle p-1">✉</div>
-                        <div class="col-11 col-md-5 text-truncate ">farias.raphael@gmail.com</div>
+                    <div
+                        class="row align-self-end row-cols-auto pt-0 m-0 mt-2 d-flex align-items-center justify-content-between">
+                        <div class="col-1 col-md-1 text-center bg-info rounded-circle p-1">☎</div>
+                        <div class="col-11 col-md-5 text-truncate">
+                            <h6 class="fw-lighter fs-6">
+                                <a href="tel:+5521996965765">(21) 996-965-765</a>
+                            </h6>
+                        </div>
+                        <div class="col-1 col-md-1 text-center bg-info rounded-circle p-1">✉</div>
+                        <div class="col-11 col-md-5 text-truncate fw-lighter fs-6">
+                            <h6 class="fw-lighter fs-6">
+                                <a href="mailto:farias.raphael@gmail.com">farias.raphael@gmail.com</a>
+                            </h6>
+                        </div>
                     </div>
                 </div>
             </div>
             <div
                 class="col-12 col-md-2 p-0 d-flex flex-row justify-content-center flex-md-column justify-content-md-end">
-                <img src="https://images2.imgbox.com/b4/6f/XeirVlCO_o.png" alt="whatsapp"
-                    class="bg-info border-info p-1" style="width: 40px" name="social-media">
-                <img src="https://images2.imgbox.com/27/bd/8bl1XuKw_o.png" alt="linkedin"
-                    class="bg-info border-info p-1" style="width: 40px" name="social-media">
+                <a href="https://api.whatsapp.com/send/?phone=21996965765&text&type=phone_number&app_absent=0">
+
+                    <img src="https://images2.imgbox.com/b4/6f/XeirVlCO_o.png" alt="whatsapp"
+                        class="bg-info border-info p-1" style="width: 40px" name="first-social-media">
+                </a>
+
+                <a href="https://www.linkedin.com/in/fariasraphael/">
+                    <img src="https://images2.imgbox.com/27/bd/8bl1XuKw_o.png" alt="linkedin"
+                        class="bg-info border-info p-1" style="width: 40px" name="last-social-media">
+                </a>
 
             </div>
-            <div class="border rounded-5 border-info bg-info" style="padding:1px"></div>
+            <div class=" m-1 border rounded-5 border-info bg-info" style="padding:1px"></div>
         </div>
     </header>
 
