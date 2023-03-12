@@ -1,0 +1,7 @@
+{
+    "git.fetchOnPull": false,
+    "git.followTagsWhenSync": false,
+    "git.ignoreSubmodules": false,
+    "git.promptToSaveFilesBeforeStash": "always",
+    "git.supportCancellation": false
+}
